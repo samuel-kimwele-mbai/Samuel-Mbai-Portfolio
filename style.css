@@ -1,11 +1,24 @@
 :root {
     --brown-blue: #6A4E23; 
+    --dark-gray: #333;
+    --light-gray: #f4f4f4;
+    --accent-blue: #007BFF;
+    --hover-color: #3949a1;
+    --light-shadow: rgba(0, 0, 0, 0.1);
+    --button-hover: #555;
+    --footer-text: #6e75c1;
+    --footer-link: #c78e8e;
+    --about-bg: #ffe6e6;
+    --skills-bg: #f0f8ff;
+    --education-bg: #fff0f0;
+    --certifications-bg: #f3f9f9;
+    --projects-bg: #f0fff0;
+    --contact-bg: #e6f7ff;
 }
 
-/* Header styles */
 header {
-    background-color: #333; 
-    color: #3949a1;
+    background-color: var(--dark-gray); 
+    color: var(--hover-color);
     padding: 20px 0;
     text-align: center;
 }
@@ -40,9 +53,35 @@ nav ul li a:hover {
     color: var(--brown-blue);
 }
 
-/* Section styles */
 section {
     margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--light-shadow);
+}
+
+#about {
+    background-color: var(--about-bg);
+}
+
+#skills {
+    background-color: var(--skills-bg);
+}
+
+#education {
+    background-color: var(--education-bg);
+}
+
+#certifications {
+    background-color: var(--certifications-bg);
+}
+
+#projects {
+    background-color: var(--projects-bg);
+}
+
+#contact {
+    background-color: var(--contact-bg);
 }
 
 h2 {
@@ -54,7 +93,7 @@ h2 {
 }
 
 h2:hover {
-    color: #007BFF; 
+    color: var(--accent-blue); 
 }
 
 p {
@@ -64,16 +103,25 @@ p {
     background-color: rgba(255, 255, 255, 0.8); 
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px var(--light-shadow); 
 }
 
-/* Project section */
+#skills ul, #certifications ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills li, #certifications li {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
 .project {
     background-color: #fff; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--light-shadow);
 }
 
 .project h3 {
@@ -84,7 +132,7 @@ p {
 }
 
 .project h3:hover {
-    color: #007BFF; 
+    color: var(--accent-blue); 
 }
 
 .project p {
@@ -101,15 +149,14 @@ p {
 }
 
 .project a:hover {
-    color: #007BFF;
+    color: var(--accent-blue);
 }
 
-/* Contact form styles */
 form {
     background-color: #fff; 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--light-shadow);
 }
 
 label {
@@ -129,7 +176,7 @@ input, textarea {
 }
 
 button {
-    background-color: #333; 
+    background-color: var(--dark-gray); 
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -139,20 +186,19 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: var(--button-hover);
 }
 
-/* Footer styles */
 footer {
-    background-color: #333; 
-    color: #6e75c1;
+    background-color: var(--dark-gray); 
+    color: var(--footer-text);
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
 }
 
 footer a {
-    color: #c78e8e;
+    color: var(--footer-link);
     text-decoration: none;
     margin: 0 10px;
 }
