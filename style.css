@@ -1,0 +1,162 @@
+:root {
+    --brown-blue: #6A4E23; 
+}
+
+/* Header styles */
+header {
+    background-color: #333; 
+    color: #3949a1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--brown-blue);
+}
+
+/* Section styles */
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--brown-blue); 
+    transition: color 0.3s; 
+}
+
+h2:hover {
+    color: #007BFF; 
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Project section */
+.project {
+    background-color: #fff; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--brown-blue); 
+    transition: color 0.3s; 
+}
+
+.project h3:hover {
+    color: #007BFF; 
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: var(--brown-blue); 
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.project a:hover {
+    color: #007BFF;
+}
+
+/* Contact form styles */
+form {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: var(--brown-blue); 
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333; 
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; 
+    color: #6e75c1;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #c78e8e;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: var(--brown-blue); 
+}
